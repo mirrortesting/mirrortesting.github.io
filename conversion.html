@@ -11,6 +11,8 @@
 
   gtag('config', 'AW-448812149');
   gtag('config', 'G-GQHWGHBT40');
+  <!-- gtag for SA360 -->
+  gtag('config', 'DC-11401879');
 </script>
 <!-- Event snippet for Website sale conversion page -->
 <script>
@@ -19,6 +21,12 @@
   gtag('event', 'conversion', {
       'send_to': 'AW-448812149/c_qKCJi0hPABEPWogdYB',
       'transaction_id': urlParams.get('transaction_id')
+  });
+  <!-- gtag for SA360-->
+  gtag('event', 'purchase',{
+      'allow_custom_scripts': true,
+      'transaction_id': urlParams.get('transaction_id')
+      'send_to': 'DC-11401879/mirror1/mirro0+transactions'
   });
 </script>
 </head>
