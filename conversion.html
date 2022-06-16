@@ -17,9 +17,12 @@
 <script>
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
+  <!-- gtag for 64bit purchase conversion type -->
   gtag('event', 'conversion', {
-      'send_to': 'AW-448812149/c_qKCJi0hPABEPWogdYB',
-      'transaction_id': urlParams.get('transaction_id')
+      'send_to': 'AW-448812149/TO-DCICAgIAYEPWogdYB',
+      'value': 0.2,
+      'currency': 'USD',
+      'transaction_id': Date.now()
   });
   gtag('event', 'purchase',{
       'allow_custom_scripts': true,
