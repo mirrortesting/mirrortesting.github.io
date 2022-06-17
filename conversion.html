@@ -22,7 +22,7 @@
       'send_to': 'AW-448812149/TO-DCICAgIAYEPWogdYB',
       'value': 0.2,
       'currency': 'USD',
-      'transaction_id': Date.now()
+      'transaction_id': urlParams.get('transaction_id')
   });
   gtag('event', 'purchase',{
       'allow_custom_scripts': true,
