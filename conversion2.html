@@ -21,12 +21,12 @@
       'send_to': 'AW-448812149/TO-DCICAgIAYEPWogdYB',
       'value': 0.2,
       'currency': 'USD',
-      'transaction_id': urlParams.get('transaction_id')
+      'transaction_id': urlParams.get('transaction_id') || Date.now()
   });
   <!-- gtag for SA360 -->
   gtag('event', 'purchase', {
     'allow_custom_scripts': true,
-    'transaction_id': urlParams.get('transaction_id'),
+    'transaction_id': urlParams.get('transaction_id') || Date.now(),
     'send_to': 'DC-11401879/mirror1/mirro0+transactions'
   });
 </script>
