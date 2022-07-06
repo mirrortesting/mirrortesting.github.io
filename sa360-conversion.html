@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Ads: 448812149 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-448812149"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'DC-11401879');
+</script>
+<!-- Event snippets for Website sale conversion page -->
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  <!-- gtag for SA360 -->
+  gtag('event', 'purchase', {
+    'allow_custom_scripts': true,
+    'transaction_id': urlParams.get('transaction_id'),
+    'send_to': 'DC-11401879/mirror1/mirro0+transactions'
+  });
+</script>
+</head>
+
+<title>Conversion</title>
+<p> Conversion </p>
