@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PRCDD487K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'DC-11401879');
+  gtag('config', 'G-1PRCDD487K');
+</script>
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  <!-- gtag for GA4 preprod -->
+  gtag('event', 'purchase', {
+    'transaction_id': urlParams.get('transaction_id'),
+    'value': 1.0,
+    'currency': 'USD',
+  });
+</script>
+</head>
+
+<title>Conversion</title>
+<p> Conversion </p>
