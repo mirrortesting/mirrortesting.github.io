@@ -8,7 +8,9 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-FHC3PWC52P');
+  gtag('config', 'G-FHC3PWC52P', {
+    'custom_map': {'dimension1': 'dyetest_id'}
+  });
 </script>
 <script>
   const queryString = window.location.search;
@@ -16,6 +18,7 @@
   <!-- gtag for GA4 prod -->
   gtag('event', 'purchase', {
     'transaction_id': urlParams.get('transaction_id') || Date.now(),
+    'dyetest_id': urlParams.get('transaction_id') || Date.now(),
     'value': 1.0,
     'currency': 'USD',
     'items': [
