@@ -17,6 +17,7 @@
   const urlParams = new URLSearchParams(queryString);
   <!-- gtag for GA4 preprod -->
   gtag('event', 'purchase', {
+    'debug_mode': true,
     'transaction_id': urlParams.get('transaction_id') || Date.now(),
     'dyetest_id': urlParams.get('transaction_id') || Date.now(),
     'value': 1.0,
